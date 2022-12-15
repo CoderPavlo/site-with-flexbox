@@ -1,0 +1,133 @@
+h1 {
+  margin: 20px;
+  text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .flex-container .item{
+    border: 3px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .8);
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+.item .image{
+  height: 250px;
+  width: 100%;
+}
+
+.item h2{
+  margin: 10px;
+  text-align: center;
+}
+
+.item p{
+  margin: 0px 10px 0px 10px;
+  text-align: justify;
+  font-size: large;
+}
+
+.item button{
+  background-color: gray;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    height: 40px;
+    font-size: large;
+}
+
+  .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .flex-container {
+      flex-direction: column;
+    }
+    .flex-container .item {
+      width: 95%;
+      height: fit-content;
+    }
+
+    .item button {
+      width: 95%;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .flex-container {
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex-container .item {
+      width: 46%;
+      height: fit-content;
+    }
+
+    .item button {
+      width: 92%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .flex-container {
+      align-content: space-beetwen;
+    }
+    .flex-container .item {
+      width: 30%;
+      height: fit-content;
+    }
+
+    .item button {
+      width: 93%;
+    }
+  } 
+
+  @media only screen and (min-width: 992px) {
+    .flex-container {
+      gap: 30px;
+      justify-content: space-around;
+    }
+    .flex-container .item {
+      width: 30%;
+      height: fit-content;
+    }
+
+    .item button {
+      width: 93%;
+    }
+  } 
+
+  @media only screen and (min-width: 1200px) {
+    .flex-container {
+      gap: 15px;
+      justify-content: space-between;
+    }
+    .flex-container .item {
+      width: 350px;
+      height: fit-content;
+    }
+
+    .item button {
+      width: 330px;
+    }
+  }
+  
+  
+
+
